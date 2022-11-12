@@ -1,0 +1,130 @@
+body {
+    height: 100% !important;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background: #27A659;
+    border-radius: 5px;
+}
+  
+body::-webkit-scrollbar-thumb:hover {
+    background: #196839;
+    border-radius: 5px;
+}
+
+.bg-yesil {
+    background-color: #27A659;
+}
+
+.active {
+    background-color: #fff !important;
+    color: #27A659 !important;
+}
+
+.menu {
+    height: 2000px !important;
+    padding-left: 30px !important;
+}
+
+.icerik {
+    height: 60vh;
+}
+
+.nav a {
+    color: white;
+    transition: all .3s;
+}
+
+.nav a:hover {
+    color: #000 !important;
+}
+
+.here {
+    background-color: #27A659;
+}
+
+input, select {
+    border:0 !important;
+    background-color: #E8F0FE !important;
+    color: #27A659 !important;
+    font-weight: 600 !important;
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+    border-radius: 24px !important;
+}
+
+input::placeholder {
+    color: #27a65a7f !important;
+    font-weight: 300 !important;
+}
+
+input:focus {
+    outline: #E8F0FE !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #27A659 !important;
+}
+
+input:focus::placeholder {
+    color: transparent !important;
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: #27A659 !important;
+}
+
+select {
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:focus {
+    box-shadow: none !important;
+}
+
+select.round {
+    background-image:
+      linear-gradient(45deg, transparent 50%, white 50%),
+      linear-gradient(135deg, white 50%, transparent 50%),
+      radial-gradient(#27A659 70%, transparent 72%);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - .5em) .5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1.5em 1.5em;
+    background-repeat: no-repeat;
+}
+
+select.round:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      radial-gradient(#27A659 70%, transparent 72%);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - .5em) .5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1.5em 1.5em;
+    background-repeat: no-repeat;
+    border-color: #27A659;
+    outline: 0;
+}

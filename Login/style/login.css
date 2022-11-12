@@ -1,0 +1,45 @@
+input[type=text] {
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    color: #ECF0F5;
+}
+
+input, select {
+    border:0 !important;
+    background-color: #E8F0FE !important;
+    color: #27A659 !important;
+    font-weight: 600 !important;
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+    border-radius: 24px !important;
+}
+
+input::placeholder {
+    color: #27a65a7f !important;
+    font-weight: 300 !important;
+}
+
+input:focus {
+    outline: #E8F0FE !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #27A659 !important;
+}
+
+input:focus::placeholder {
+    color: transparent !important;
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: #27A659 !important;
+}
+
+button {
+    width: 100% !important;
+}
