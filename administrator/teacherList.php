@@ -43,8 +43,13 @@ include '../connect.php';
                     </a>
                 </li>
                 <li>
+                    <a href="/staj-takip/administrator/importUser.php" class="nav-link text-white">
+                        Toplu Kullanıcı Ekle
+                    </a>
+                </li>
+                <li>
                     <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white">
-                        Kullanıcı Ekle
+                        Bireysel Kullanıcı Ekle
                     </a>
                 </li>
                 <li>
@@ -74,6 +79,9 @@ include '../connect.php';
                 </li>
             </ul>
         </div>
+
+        <!-- MENU END -->
+
             <div class="col-md-9">
             <table class="table table-striped table-responsive table-hover mt-5" style="border: 1px solid black;">
                    <thead class="table-dark">

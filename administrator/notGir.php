@@ -31,13 +31,12 @@ if ($_SESSION['kullanici_no']=="") {
       <!-- MENU -->
 
       <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-yesil col-md-2 menu">
-      <div class="mb-3 m-1 mb-md-0 me-md-auto text-white text-decoration-none border p-2">
+       <div class="mb-3 m-1 mb-md-0 me-md-auto text-white text-decoration-none border p-2">
                 <span class="fs-4 text-center">Hoşgeldin <?php
                 echo $_SESSION["isim"];
                 ?></span>
             </div>
             <hr>
-            <!-- ÇİZGİ EKLENCEK -->
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link disabled text-white" aria-current="page">
@@ -45,8 +44,13 @@ if ($_SESSION['kullanici_no']=="") {
                     </a>
                 </li>
                 <li>
-                    <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white active">
-                        Kullanıcı Ekle
+                    <a href="/staj-takip/administrator/importUser.php" class="nav-link text-white">
+                        Toplu Kullanıcı Ekle
+                    </a>
+                </li>
+                <li>
+                    <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white">
+                        Bireysel Kullanıcı Ekle
                     </a>
                 </li>
                 <li>
@@ -65,7 +69,7 @@ if ($_SESSION['kullanici_no']=="") {
                     </a>
                 </li>
                 <li>
-                    <a href="/staj-takip/administrator/studentInformation.php" class="nav-link text-white">
+                    <a href="/staj-takip/administrator/studentInformation.php" class="nav-link text-white active">
                         Başvuruları Değerlendir
                     </a>
                 </li>
@@ -78,6 +82,7 @@ if ($_SESSION['kullanici_no']=="") {
         </div>
 
         <!-- MENU END -->
+
 
       <!-- Öğrenci Bilgi -->
 

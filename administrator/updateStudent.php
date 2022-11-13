@@ -30,7 +30,7 @@ if ($_SESSION['kullanici_no']=="") {
 <div class="row">
        <!-- MENU -->
 
-       <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-yesil col-md-3 menu">
+       <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-yesil col-md-2 menu">
        <div class="mb-3 m-1 mb-md-0 me-md-auto text-white text-decoration-none border p-2">
                 <span class="fs-4 text-center">Hoşgeldin <?php
                 echo $_SESSION["isim"];
@@ -44,7 +44,7 @@ if ($_SESSION['kullanici_no']=="") {
                     </a>
                 </li>
                 <li>
-                    <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white">
+                    <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white ">
                         Kullanıcı Ekle
                     </a>
                 </li>
@@ -59,7 +59,7 @@ if ($_SESSION['kullanici_no']=="") {
                     </a>
                 </li>
                 <li>
-                    <a href="/staj-takip/administrator/recourseList.php" class="nav-link text-white">
+                    <a href="/staj-takip/administrator/recourseList.php" class="nav-link text-white ">
                         Başvuruları Görüntüle
                     </a>
                 </li>
@@ -77,6 +77,7 @@ if ($_SESSION['kullanici_no']=="") {
         </div>
 
         <!-- MENU END -->
+
 
      
       <div class="col-md-9">

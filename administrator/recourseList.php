@@ -31,9 +31,9 @@ include '../connect.php';
 <body>
 
 <div class="row">
-       <!-- MENU -->
+         <!-- MENU -->
 
-       <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-yesil col-md-2 menu">
+         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-yesil col-md-2 menu">
        <div class="mb-3 m-1 mb-md-0 me-md-auto text-white text-decoration-none border p-2">
                 <span class="fs-4 text-center">Hoşgeldin <?php
                 echo $_SESSION["isim"];
@@ -47,8 +47,13 @@ include '../connect.php';
                     </a>
                 </li>
                 <li>
-                    <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white ">
-                        Kullanıcı Ekle
+                    <a href="/staj-takip/administrator/importUser.php" class="nav-link text-white">
+                        Toplu Kullanıcı Ekle
+                    </a>
+                </li>
+                <li>
+                    <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white">
+                        Bireysel Kullanıcı Ekle
                     </a>
                 </li>
                 <li>
@@ -78,6 +83,9 @@ include '../connect.php';
                 </li>
             </ul>
         </div>
+
+        <!-- MENU END -->
+
             <div class="col-md-10 container-fluid">
             <table class="table table-striped table-responsive table-hover mt-5" style="border: 1px solid black;">
                    <thead class="thead-dark">

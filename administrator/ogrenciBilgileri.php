@@ -38,7 +38,6 @@ if ($_SESSION['kullanici_no']=="") {
                 ?></span>
             </div>
             <hr>
-            <!-- ÇİZGİ EKLENCEK -->
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
                     <a href="#" class="nav-link disabled text-white" aria-current="page">
@@ -46,8 +45,13 @@ if ($_SESSION['kullanici_no']=="") {
                     </a>
                 </li>
                 <li>
-                    <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white ">
-                        Kullanıcı Ekle
+                    <a href="/staj-takip/administrator/importUser.php" class="nav-link text-white">
+                        Toplu Kullanıcı Ekle
+                    </a>
+                </li>
+                <li>
+                    <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white">
+                        Bireysel Kullanıcı Ekle
                     </a>
                 </li>
                 <li>
@@ -79,6 +83,7 @@ if ($_SESSION['kullanici_no']=="") {
         </div>
 
         <!-- MENU END -->
+
 
      
         <div class="col-md-10">

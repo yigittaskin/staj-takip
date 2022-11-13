@@ -40,8 +40,13 @@ if ($_SESSION['kullanici_no']=="") {
                     </a>
                 </li>
                 <li>
+                    <a href="/staj-takip/administrator/importUser.php" class="nav-link text-white">
+                        Toplu Kullanıcı Ekle
+                    </a>
+                </li>
+                <li>
                     <a href="/staj-takip/administrator/addUser.php" class="nav-link text-white active">
-                        Kullanıcı Ekle
+                        Bireysel Kullanıcı Ekle
                     </a>
                 </li>
                 <li>
