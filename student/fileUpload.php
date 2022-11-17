@@ -108,8 +108,6 @@ if ($_SESSION['kullanici_no']=="") {
         if (isset($_POST["dosya_gonder"])) {
             $dosya_gonder=$db->prepare("update basvuru set
             ogrenci_no=:ogrenci_no,
-            isim=:isim,
-            soyisim=:soyisim,
             file=:file  where ogrenci_no=:ogrenci_no
             ");
 

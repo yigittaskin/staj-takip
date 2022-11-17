@@ -108,8 +108,6 @@ if ($_SESSION['kullanici_no']=="") {
         if (isset($_POST["dosya_gonder"])) {
             $dosya_gonder=$db->prepare("update basvuru set
             ogrenci_no=:ogrenci_no,
-            isim=:isim,
-            soyisim=:soyisim,
             staj_defter=:staj_defter  where ogrenci_no=:ogrenci_no
             ");
 
@@ -120,7 +118,7 @@ if ($_SESSION['kullanici_no']=="") {
             ));
 
             if ($kontrol) {
-
+                header('location:/staj-takip/student/stajDurum.php');
                exit;
             }else{
                 echo "hata";

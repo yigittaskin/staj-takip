@@ -75,7 +75,9 @@ if ($_SESSION['kullanici_no']=="") {
                         <label class="text-dark" for="bitisgunu">Staj bitiş tarihi:</label>
                         <input class="form-control" type="date" name="bitis_gunu" min="2002-09-09" id="bitis_gunu" value="<?php echo $satir['bitis_gunu']; ?>" >
                     </div>
-                    
+                    <div class="form-group col-md-12">
+                        <button type="submit" class="btn btn-outline-success mt-5" name="staj_bilgi" >Staj Bilgileri Güncelle</button>
+                    </div>
                 </div>
               </form>
         </div>
@@ -84,14 +86,12 @@ if ($_SESSION['kullanici_no']=="") {
 <?php
         if (isset($_POST["staj_bilgi"])) {
             $staj_bilgi=$db->prepare("update basvuru set
-            staj_tur=:staj_tur,
             is_gunu=:is_gunu,
             baslangic_gunu=:baslangic_gunu,
             bitis_gunu=:bitis_gunu  where ogrenci_no=:ogrenci_no
             ");
 
             $kontrol=$staj_bilgi->execute(array(
-                "staj_tur"=>$_POST["staj_tur"],
                 "is_gunu"=>$_POST["is_gunu"],
                 "baslangic_gunu"=>$_POST["baslangic_gunu"],
                 "bitis_gunu"=>$_POST["bitis_gunu"],

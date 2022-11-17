@@ -6,6 +6,8 @@ $atananhoca = $_SESSION["kullanici_no"];
     $sorgu = $db->query("select * from basvuru where atanan_hoca='{$atananhoca}' order by ogrenci_no desc ");
 //Girilen sorguyu çalıştırıyoruz.
     $sorgu->execute();
+    $sorgu2 = $db->query("SELECT * FROM basvuru");
+    $sorgu2->execute();
     if ($_SESSION['kullanici_no']=="") {
         header('location:/staj-takip/Login/index.php');
     }
@@ -58,15 +60,23 @@ $atananhoca = $_SESSION["kullanici_no"];
                            <th scope="col"></th>
                            <th scope="col"></th>
                            <th scope="col"></th>
-                           <th scope="col"></th>
-                           <th scope="col"></th>
                        </tr>
             </thead>
             <tbody style="border: 1px solid black;">
 
             <?php
             while($satir=$sorgu->fetch(PDO::FETCH_ASSOC)){
-                echo "<tr>";
+                
+                while($satir2=$sorgu2->fetch(PDO::FETCH_ASSOC)){
+                    if ($satir2['staj_not']=="Başarılı") {
+                        $stil = "background-color:#27a65ac8;";
+                    }
+                    elseif ($satir2['staj_not']=="Başarısız") {
+                        $stil = "background-color:red;";
+                    }
+    
+                echo "<tr style='".$stil."'>";
+                }
                 echo "<td>".$satir["ogrenci_no"]."</td>";
                 echo "<td>".$satir["isim"]."</td>";
                 echo "<td>".$satir["soyisim"]."</td>";

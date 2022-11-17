@@ -66,6 +66,7 @@ if ($_SESSION['kullanici_no']=="") {
                         <div  class="form-group p-2 " style="background-color:#E8F0FE; border-radius:24px;">
                         <a href="<?php echo $satir['staj_defter']; ?>" target="_blank"> <?php echo $satir['staj_defter']; ?> </a>
                         </div>
+                        <input name="staj_defter" style="display:none !important;" class="text-center p-2 text-dark" value="<?php echo $satir['staj_defter']; ?>">
                     </div>
                     <div class="form-group col-md-6 mt-5" >
                         <label class="text-dark">Staj Durumu:</label><br>

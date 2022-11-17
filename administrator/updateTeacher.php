@@ -157,6 +157,7 @@ if ($_SESSION['kullanici_no']=="") {
 
             if ($kontrol) {
                header("location:/staj-takip/administrator/teacherList.php");
+               exit;
             }else{
                 echo "hata";
             }
