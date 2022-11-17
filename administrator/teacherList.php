@@ -112,7 +112,7 @@ include '../connect.php';
                 echo "<td>".$satir["fakulte_adi"]."</td>";
                 echo "<td>".$satir["role"]."</td>";
                 echo "<td><a class='btn btn-warning' role='button' href='updateTeacher.php?id=$satir[id]'>Güncelle</a></td>";
-                echo "<td><a class='btn btn-danger' role='button' href='deleteTeacher.php?id=$satir[id]'>Sil</a></td>";
+                echo "<td><a class='btn btn-danger' role='button' href='deleteTeacher.php?kullanici_no=$satir[kullanici_no]'>Sil</a></td>";
                 echo "</tr>";
             }
             ?>

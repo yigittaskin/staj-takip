@@ -131,8 +131,11 @@ $ogrenci = $_SESSION["kullanici_no"];
                     $stajNot = "background-color:#FFC107;";
                     $stajNotText = "Henüz Başarı Durumu Girilmedi.";
                 }
-                else {
+                elseif ($satir["staj_not"] == "Başarılı") {
                     $stajNot = "background-color:green;";
+                    $stajNotText = $satir["staj_not"];
+                }else {
+                    $stajNot = "background-color:red;";
                     $stajNotText = $satir["staj_not"];
                 }
 

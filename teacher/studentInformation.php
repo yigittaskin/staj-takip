@@ -74,6 +74,9 @@ $atananhoca = $_SESSION["kullanici_no"];
                     elseif ($satir2['staj_not']=="Başarısız") {
                         $stil = "background-color:red;";
                     }
+                    else {
+                        $stil = "background-color:white;";
+                    }
     
                 echo "<tr style='".$stil."'>";
                 }
