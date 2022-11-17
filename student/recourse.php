@@ -317,12 +317,9 @@ function downloadPDF(e) {
 
     const ayControl = ((bitisDate) - (baslangicDate));//2592000000 -> 1 ay'ın saniye cinsten değeri
     const yasSiniri = ((now.getFullYear()) - (dogumDate.getFullYear()));
-    console.log(ayControl)
-    if(yasSiniri < 25) {
-        dateControl = true;        
-    }
-    else if(ayControl >= 2592000000) {
-        dateControl = true;
+    console.log(ayControl);
+    if(yasSiniri < 25 && ayControl >= 2592000000) {
+        dateControl = true;       
     }
     else {
         dateControl = false;
@@ -335,7 +332,6 @@ function downloadPDF(e) {
     if (dateControl == true) {
 
     basvuruGonder.style.display = "block"; //Eğer Koşul Doğru Değilse Başvuru Gönder Butonu Gizli, Eğer Koşul Doğruysa Buton Aktif...
-
 
     var doc = new jsPDF();
     var pdfjs = document.querySelector('#pdf_indir');

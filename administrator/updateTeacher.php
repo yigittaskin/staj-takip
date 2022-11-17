@@ -112,10 +112,11 @@ if ($_SESSION['kullanici_no']=="") {
                         <label class="text-dark" for="fakulte_adi">Fakülte:</label>
                         <input class="form-control" type="text" name="fakulte_adi" id="fakulte_adi" value="<?php echo $satir['fakulte_adi']; ?>"  required>
                     </div>
-                    <div class="form-group col-md-6 mt-3">
+                    <div class="form-group col-md-6">
                         <label for="sinif">Role:</label>
                         <select id="sinif" name="role" class="form-control" value="<?php echo $satir['role']; ?>" required>
                           <option value="öğretmen">öğretmen</option>
+                          <option value="komisyon">komisyon</option>
                           <option value="öğrenci">öğrenci</option>
                         </select>
                       </div>
@@ -155,14 +156,12 @@ if ($_SESSION['kullanici_no']=="") {
             ));
 
             if ($kontrol) {
-               header('location:/staj-takip/administrator/teacherList.php');
-      exit;
+               header("location:/staj-takip/administrator/teacherList.php");
             }else{
                 echo "hata";
             }
         }
         ?>
-
 
 
 </body>
